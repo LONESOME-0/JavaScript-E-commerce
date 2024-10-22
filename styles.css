@@ -1,0 +1,151 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #2C2C2C; 
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* จัดการการจัดวางกลางจอ */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* สไตล์ของหัวข้อ */
+h1, h2 {
+    text-align: center;
+    color: #fff; /* หัวข้อสีขาว */
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+/* การจัดวางฟอร์มและองค์ประกอบต่าง ๆ */
+.product-form, .product-dashboard, .shopping-cart {
+    border-radius: 10px;
+    padding: 20px ;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #2F2F2F; 
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+/* สีโทน Autumn ในกรอบต่าง ๆ */
+.product-form {
+    border: 3px solid #BF5700; /* Burnt Orange */
+}
+
+.product-dashboard {
+    border: 3px solid #D4A017; /* Mustard Yellow */
+}
+
+.shopping-cart {
+    border: 3px solid #556B2F; /* Olive Green */
+}
+
+/* ฟอร์มสำหรับการกรอกข้อมูล */
+input[type="text"], input[type="number"] {
+    width: 15%;
+    padding: 12px;
+    margin-right: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* ปุ่มต่าง ๆ */
+button {
+    padding: 12px 20px;
+    background-color: #BF5700; /* Burnt Orange */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #D87F33; /* ส้มเข้มเมื่อ hover */
+    transform: scale(1.05);
+}
+
+#calculateTotal {
+    background-color: #D4A017; /* Mustard Yellow */
+}
+
+#calculateTotal:hover {
+    background-color: #E7B238;
+}
+
+/* การจัดแสดงสินค้าต่าง ๆ */
+.product-item, .cart-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 5px;
+    color: #fff; /* สีตัวหนังสือขาว */
+}
+
+.product-item img, .cart-item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.product-item h4, .cart-item h4 {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+}
+
+.product-item p, .cart-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #aaa;
+}
+
+/* ปุ่ม Remove สินค้า */
+.remove-btn {
+    background-color: #8B0000; /* Deep Red */
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.remove-btn:hover {
+    background-color: #A52A2A; /* แดงหม่นเมื่อ hover */
+    transform: scale(1.05);
+}
+
+/* การแสดงผลของราคา */
+h3 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #fff;
+}
+
+#totalPrice {
+    color: #BF5700; /* Burnt Orange */
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* การจัดการความเป็นศูนย์กลางขององค์ประกอบ */
+.product-form, .product-dashboard, .shopping-cart {
+    margin: 20px 0;
+    width: 100%; /* ให้ครอบคลุมพื้นที่ทั้งหมด */
+    max-width: 1000px; /* จำกัดความกว้างไม่ให้เกิน 800px */
+}
